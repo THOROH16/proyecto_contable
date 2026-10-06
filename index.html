@@ -1,15 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="contabilidad ">
-    <title>Escalena</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <!-- Tu CSS personalizado (SIEMPRE al final) -->
+    <meta name="description" content="Portafolio personal de THOROH16 - Desarrollo web y diseño">
+    <title>THOROH16 | Portafolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS propio -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#hero">
+                <i class="bi bi-code-slash"></i> THOROH16
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portafolio">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" class="d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Hola, soy <span class="text-warning">THOROH16</span></h1>
+            <p class="lead mb-4">Desarrollador web apasionado por crear experiencias digitales</p>
+            <a href="#portafolio" class="btn btn-warning btn-lg me-2">
+                <i class="bi bi-eye"></i> Ver mi trabajo
+            </a>
+            <a href="#contacto" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-envelope"></i> Contactarme
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== SOBRE MÍ ==================== -->
+    <section id="sobre-mi" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/500x400/0d6efd/ffffff?text=Tu+Foto" 
+                         alt="Foto de perfil" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-3">Sobre mí</h2>
+                    <p class="text-muted">Soy un desarrollador web enfocado en crear sitios modernos, rápidos y responsive. Me apasiona aprender nuevas tecnologías y mejorar cada día.</p>
+                    <p class="text-muted">Trabajo con HTML, CSS, JavaScript y frameworks modernos como Bootstrap.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Diseño responsive</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Código limpio y semántico</li>
+                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>Optimización de rendimiento</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-2">Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Servicios</h2>
+                <p class="text-muted">Lo que puedo hacer por ti</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 service-card">
+                        <div class="card-body">
+                            <i class="bi bi-laptop display-4 text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Diseño Web</h5>
+                            <p class="card-text text-muted">Sitios modernos, adaptados a cualquier dispositivo y con las mejores prácticas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 service-card">
+                        <div class="card-body">
+                            <i class="bi bi-phone display-4 text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">Desarrollo Móvil</h5>
+                            <p class="card-text text-muted">Aplicaciones web progresivas con experiencia nativa en móviles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 service-card">
+                        <div class="card-body">
+                            <i class="bi bi-graph-up-arrow display-4 text-primary mb-3"></i>
+                            <h5 class="card-title fw-bold">SEO y Optimización</h5>
+                            <p class="card-text text-muted">Mejora la visibilidad de tu sitio en buscadores y su velocidad de carga.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PORTAFOLIO ==================== -->
+    <section id="portafolio" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Portafolio</h2>
+                <p class="text-muted">Algunos de mis proyectos recientes</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item position-relative overflow-hidden rounded shadow">
+                        <img src="https://via.placeholder.com/400x300/6c757d/ffffff?text=Proyecto+1" 
+                             alt="Proyecto 1" class="img-fluid w-100">
+                        <div class="portfolio-overlay d-flex flex-column justify-content-center align-items-center text-white">
+                            <h5 class="fw-bold">Proyecto 1</h5>
+                            <p class="mb-0">Diseño web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item position-relative overflow-hidden rounded shadow">
+                        <img src="https://via.placeholder.com/400x300/6c757d/ffffff?text=Proyecto+2" 
+                             alt="Proyecto 2" class="img-fluid w-100">
+                        <div class="portfolio-overlay d-flex flex-column justify-content-center align-items-center text-white">
+                            <h5 class="fw-bold">Proyecto 2</h5>
+                            <p class="mb-0">Aplicación web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item position-relative overflow-hidden rounded shadow">
+                        <img src="https://via.placeholder.com/400x300/6c757d/ffffff?text=Proyecto+3" 
+                             alt="Proyecto 3" class="img-fluid w-100">
+                        <div class="portfolio-overlay d-flex flex-column justify-content-center align-items-center text-white">
+                            <h5 class="fw-bold">Proyecto 3</h5>
+                            <p class="mb-0">Landing page</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACTO ==================== -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Contacto</h2>
+                <p class="text-muted">¿Tienes un proyecto en mente? Escríbeme</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Tu correo" required>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Asunto" required>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" rows="5" placeholder="Tu mensaje" required></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="bi bi-send"></i> Enviar mensaje
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 THOROH16. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS propio -->
+    <script src="js/main.js"></script>
 </body>
 </html>
