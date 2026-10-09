@@ -4,7 +4,13 @@
     --color-acento: #ffc107;
     --color-oscuro: #1a1a2e;
 }
-
+/* titular  */
+.letra-cursiva {
+    font-style: italic;
+    font-weight: 700;
+    margin-right: 6px;
+    color: #f0c040; /* opcional */
+}
 /* ============ BASE ============ */
 * {
     scroll-behavior: smooth;
